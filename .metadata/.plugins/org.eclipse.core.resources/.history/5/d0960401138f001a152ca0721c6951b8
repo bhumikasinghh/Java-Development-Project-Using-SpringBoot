@@ -1,0 +1,5 @@
+package com.bhumika.student.dal.entities;
+
+public class Student {
+
+}

@@ -1,0 +1,7 @@
+package com.bhumika.customer.dal.repos;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface CustomerRepository extends CrudRepository<Customer, long> {
+
+}

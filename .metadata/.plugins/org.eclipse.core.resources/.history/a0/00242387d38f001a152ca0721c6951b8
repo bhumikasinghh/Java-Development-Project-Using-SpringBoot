@@ -1,0 +1,39 @@
+package com.bhumika.location.service;
+
+import java.util.List;
+
+import com.bhumika.location.entities.Location;
+
+public class LocationServiceImpl implements LocationService {
+
+	@Override
+	public Location savelocation(Location location) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Location updatelocation(Location location) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deletelocation(Location location) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Location getlocationById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Location> getAllLocations() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

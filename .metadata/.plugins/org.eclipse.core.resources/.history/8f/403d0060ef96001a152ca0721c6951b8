@@ -1,0 +1,9 @@
+package com.bhumika.vendor.repos;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.bhumika.vendor.entities.Vendor;
+
+public interface VendorRepository extends CrudRepository<Vendor, Long> {
+
+}

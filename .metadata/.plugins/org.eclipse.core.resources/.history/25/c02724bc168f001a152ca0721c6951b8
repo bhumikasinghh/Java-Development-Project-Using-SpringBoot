@@ -1,0 +1,23 @@
+package com.bhumika.student.dal;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.bhumika.student.dal.entities.Student;
+import com.bhumika.student.dal.repos.StudentRepository;
+
+@SpringBootTest
+class StudentdalApplicationTests {
+	
+	@Autowired
+	private StudentRepository studentrepository;
+
+	@Test
+	public void testCreateStudent()
+	{
+		studentrepository.save(new Student());	
+	}
+	
+
+}

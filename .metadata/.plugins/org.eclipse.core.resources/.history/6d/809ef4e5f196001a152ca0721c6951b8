@@ -1,0 +1,39 @@
+package com.bhumika.vendor.service;
+
+import java.util.List;
+
+import com.bhumika.vendor.entities.Vendor;
+
+public class VendorServiceImpl implements VendorService {
+
+	@Override
+	public Vendor saveVendorInfo(Vendor vendor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Vendor updateVendorInfo(Vendor vendor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteVendorInfo(Vendor vendor) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Vendor getVendorById(Vendor vendor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Vendor> getAllVendors() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.bhumika.location.util;
+
+public class EmailUtilImpl implements EmailUtil {
+
+	@Override
+	public void sendEmail(String toAddress, String subject, String body) {
+		
+
+	}
+
+}

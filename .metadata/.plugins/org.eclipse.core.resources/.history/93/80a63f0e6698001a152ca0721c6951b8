@@ -1,0 +1,9 @@
+package com.bhumika.location.util;
+
+import java.util.List;
+
+public interface ReportUtil {
+	
+	void generatePieChart( String Path,List<Object[]> data);
+
+}

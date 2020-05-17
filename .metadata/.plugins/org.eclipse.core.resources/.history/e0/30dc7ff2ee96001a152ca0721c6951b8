@@ -1,0 +1,5 @@
+package com.bhumika.vendor.service;
+
+public interface VendorService {
+
+}

@@ -1,0 +1,11 @@
+package com.bhumika.vendor.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class VendorController {
+	@RequestMapping("/showVendor")
+	public String showCreate() {
+		return "createVendor";
+	}
+
+}

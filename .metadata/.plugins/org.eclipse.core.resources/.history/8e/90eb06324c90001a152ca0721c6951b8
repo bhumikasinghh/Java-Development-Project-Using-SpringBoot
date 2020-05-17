@@ -1,0 +1,23 @@
+package com.bhumika.location.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.bhumika.location.entities.Location;
+
+public interface LocationService
+{
+	
+	
+	Location updatelocation(Location location);
+	
+	void deletelocation(Location location);
+	
+	Optional<Location> getlocationById(int id);
+	
+	List<Location> getAllLocations();
+
+	Location saveLocation(Location location);
+
+
+}

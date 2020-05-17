@@ -1,0 +1,5 @@
+package com.bhumika.customer.dal.repos;
+
+public interface CustomerRepository {
+
+}

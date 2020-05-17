@@ -1,0 +1,5 @@
+package com.bhumika.vendor.entities;
+
+public class Vendor {
+
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VendorApplicationTests.testCreateStudent" project="Vendor" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.bhumika.vendor.VendorApplicationTests" time="0.06" displayname="VendorApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.bhumika.vendor.VendorApplicationTests]">
+    <testcase name="testCreateStudent" classname="com.bhumika.vendor.VendorApplicationTests" time="0.06" displayname="testCreateStudent()" uniqueid="[engine:junit-jupiter]/[class:com.bhumika.vendor.VendorApplicationTests]/[method:testCreateStudent()]"/>
+  </testsuite>
+</testrun>

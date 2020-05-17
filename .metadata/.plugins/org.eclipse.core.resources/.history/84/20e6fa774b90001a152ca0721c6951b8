@@ -1,0 +1,31 @@
+package com.bhumika.location.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bhumika.location.entities.Location;
+import com.bhumika.location.service.LocationService;
+
+@Controller
+public class LocationController
+{
+	
+	LocationService service; 
+	@RequestMapping("/showCreate")
+	public String showCreate() 
+	{
+	return "createLocation";	
+	}
+	
+	@RequestMapping("/savloc")
+	public String saveLocation(@ModelAttribute("location")Location location,ModelMap modelMap) 
+	{
+		Location locationSaved=service.savelocation(location);
+		String msg="Location saved with id:"+locationSaved.getId();
+		modelMap.addAttribute("msg",msg);
+	return "createLocation";	
+	}
+
+}

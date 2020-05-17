@@ -1,0 +1,21 @@
+package com.bhumika.location;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.bhumika.location.repos.LocationRepository;
+
+@SpringBootTest
+class LocationwebApplicationTests {
+	
+	@Autowired
+	LocationRepository locationRepository;
+
+	@Test
+	public void testDeleteLocation()
+	{
+		
+		locationRepository.deleteById(0);
+	}
+}

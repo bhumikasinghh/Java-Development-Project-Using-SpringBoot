@@ -1,0 +1,30 @@
+package com.bhumika.vendor.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+import com.bhumika.vendor.entities.Vendor;
+@Controller
+public class VendorController {
+	
+	Autowired
+	VendorService service;
+	
+	@RequestMapping("/showVendor")
+	public String showCreate() {
+		return "createVendor";
+	}
+	@RequestMapping("/saveLoc")
+	public String saveLocation(@ModelAttribute("vendor") Vendor vendor, ModelMap modelMap) {
+		Vendor vendorSaved = service.saveLocation(vendor);
+		String msg = "vendor saved with id: " + vendorSaved.getId();
+		modelMap.addAttribute("msg", msg);
+		return "createVendor";
+	}
+
+
+}

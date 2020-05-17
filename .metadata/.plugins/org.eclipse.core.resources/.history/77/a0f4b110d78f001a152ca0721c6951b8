@@ -1,0 +1,5 @@
+package com.bhumika.location.controllers;
+
+public class LocationController {
+
+}

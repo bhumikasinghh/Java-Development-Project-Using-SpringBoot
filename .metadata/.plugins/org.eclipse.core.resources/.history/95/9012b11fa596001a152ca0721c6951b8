@@ -1,0 +1,37 @@
+package com.bhumika.vendor;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.bhumika.vendor.entities.Vendor;
+import com.bhumika.vendor.repos.VendorRepository;
+
+@SpringBootTest
+class VendorApplicationTests {
+	
+	@Autowired
+	private VendorRepository vendorRepository;
+
+
+	@Test
+	public void testCreateStudent()
+	{
+		Vendor vendor=new Vendor();
+		vendor.setId(3);
+		vendor.setCode("BAR");
+		vendor.setName("bhumika");
+		vendor.setEmail("bhumikasingh.hhh@hh");
+		vendor.setAddress("299,katra chand khan");
+		vendorRepository.save(vendor);	
+	}
+
+	@Test
+	public void testfindStudentById()
+	{
+		Vendor vendor=vendorRepository.findById(1l).get();
+		System.out.println(vendor);
+		
+		
+	}
+}
